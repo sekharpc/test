@@ -9,4 +9,5 @@ phases:
      - git config --global user.name "Tester test"
      - git config -l
      - git tag -a "TEST-TAG-1"  -m "First tag test"
-     - git push origin TEST-TAG-1
+     - git tag -l
+     - git push origin "TEST-TAG-1"
