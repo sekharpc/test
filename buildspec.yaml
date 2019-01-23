@@ -3,4 +3,10 @@ version: 0.2
 phases:
   pre_build:
     commands:
-        - ./codebuild_env_properties.sh
+     - ./codebuild_env_properties.sh
+     - git status
+     - git config --global user.email "test@test.test.test.com"
+     - git config --global user.name "Tester test"
+     - git config -l
+     - git tag -a "TEST-TAG-1"  -m "First tag test"
+     - git push origin TEST-TAG-1
